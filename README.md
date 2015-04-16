@@ -59,5 +59,4 @@ public
 
 ### Testing
 
-Run
-    revel test github.com/mondok/reveltest dev
+      revel test github.com/mondok/reveltest dev
