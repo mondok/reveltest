@@ -6,7 +6,7 @@ type App struct {
 	*revel.Controller
 }
 
-type You struct {
+type Person struct {
 	Name string
 	Age  int
 }
@@ -18,7 +18,7 @@ func (c App) Index() revel.Result {
 }
 
 func (c App) Name() revel.Result {
-	var you You
-	c.Params.Bind(&you, "you")
-	return c.Render(you)
+	var person Person
+	c.Params.Bind(&person, "person")
+	return c.Render(person)
 }
